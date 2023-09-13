@@ -1,8 +1,7 @@
 import subprocess
 import os
 
-def blast(LTR, genome, output):
-    path = os.path.dirname(LTR)
+def blast(LTR, genome, output, path):
     output_blast = os.path.join(path, output + "_blast" +".txt")
 
 
@@ -11,7 +10,7 @@ def blast(LTR, genome, output):
         "blastn",
         "-query", LTR,
         "-subject", genome,
-        "-outfmt", "6 qseqid sseqid sstart send evalue",
+        "-outfmt", "6 qseqid sseqid sstart send evalue sstrand",
         "-out", output_blast,
     ]
 
@@ -19,4 +18,9 @@ def blast(LTR, genome, output):
     subprocess.run(blast_command)
 
     print(f"BLAST results saved to {output_blast}")
-    return output_blast
+    if os.path.getsize(output_blast) == 0:
+        TE_presence = False
+    else:
+        TE_presence = True
+
+    return output_blast, TE_presence

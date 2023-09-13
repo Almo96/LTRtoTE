@@ -191,7 +191,6 @@ def LTRe_fDNA_out(regions4_fasta, output, path):
 #         df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['End'] + 1, row['End'] + x + 1, 'R8']],
 #                                                           columns=["Chr", "Start", "End", "Region"])])
     
-    
 #     path = os.path.dirname(LTR)
 #     output_df_regions = os.path.join(path, output + "_regions" + ".bed")
 #     df_regions.to_csv(output_df_regions, sep='\t', header=False, index=False)

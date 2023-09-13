@@ -8,7 +8,6 @@ def controlIO(LTR, genome, output, output_path, minlenTE, maxlenTE, tsd):
             raise ValueError(f"{arg_name} must have a .fasta or .fa extension.")
 
 
-    # Your script logic here
     print("LTR:", os.path.basename(LTR))
     print("Genome:", os.path.basename(genome))
     print("Output path:", output_path)

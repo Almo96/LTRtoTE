@@ -1,7 +1,6 @@
 import os
 import numpy as np
 
-
 def checkTSD(regions, output, path):
     reg_left = []
     reg_right = []

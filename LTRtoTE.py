@@ -42,10 +42,6 @@ if __name__ == "__main__":
 
         output_fasta = TEfromLTR.getfasta(genome, output_bed, output, output_path, "")
 
-        #output_left, output_right, left_fasta, right_fasta = TSD.TSDbed(bed, tsd, genome, output)
-
-        #TSD.checkTSD(left_fasta, right_fasta, output, genome)
-
         regions4_bed = LTRends_flanking.LTRe_fDNA(output, output_path, blast2, minlenTE, maxlenTE)
 
         regions4_fasta = TEfromLTR.getfasta(genome, regions4_bed, output, output_path, "_regions")
@@ -53,7 +49,7 @@ if __name__ == "__main__":
         output_regions = LTRends_flanking.LTRe_fDNA_out(regions4_fasta, output, output_path)
 
         TSD.checkTSD(output_regions, output, output_path)
-        
+
     else:
         
         print("No TEs have been found")

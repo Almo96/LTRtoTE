@@ -72,6 +72,7 @@ def TE_position(output, output_blast, minlenTE, maxlenTE, path):
     
     return output_bed, bed_sorted, blast2
 
+
 def getfasta(genome, output_bed, output, path, out_extra):
     output_fasta = os.path.join(path, output + out_extra +".fasta")
     command = ["bedtools", "getfasta", "-fi", genome, "-bed", output_bed, "-s", "-fo", output_fasta]

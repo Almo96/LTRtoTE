@@ -23,4 +23,5 @@ def blast(LTR, genome, output, path):
     else:
         TE_presence = True
 
+
     return output_blast, TE_presence

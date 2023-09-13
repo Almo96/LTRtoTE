@@ -37,7 +37,7 @@ the parameters provided.
 How to run the code:
 
 ``` bash
-python LTRtoTE.py path/to/LTR_T.fasta path/to/genome output_name minlenTE maxlenTE
+python LTRtoTE.py path/to/LTR_T.fasta path/to/genome path/to/output output_name minlenTE maxlenTE
 ```
 
 - **output_path** the path where all the output files will be saved
@@ -52,7 +52,7 @@ python LTRtoTE.py path/to/LTR_T.fasta path/to/genome output_name minlenTE maxlen
 Example:
 
 ``` bash
-python LTRtoTE.py ../genomes/LTR_T.fasta ../genomes/genome Dmel732 4500 6000 --tsd 50
+python LTRtoTE.py ../genomes/LTR_T.fasta ../genomes/genome ../genomes/output Dmel732 4500 6000 --tsd 50
 ```
 
 **Requirements:**

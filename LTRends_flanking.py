@@ -57,7 +57,7 @@ def LTRe_fDNA(output, path, output_blast, minlenTE, maxlenTE):
                                                               columns=["Chr", "Start", "End", "Region", "Score", "Strand"])])
 
         else:
-            df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['Start'] - x - 1, row['Start'] - 1, 'R5', 0, row['Strand']]],
+            df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['Start'] - c - 1, row['Start'] - 1, 'R5', 0, row['Strand']]],
                                                               columns=["Chr", "Start", "End", "Region", "Score", "Strand"])])
         
             df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['Start'] - 1, row['Start'] + y - 1, 'R6', 0, row['Strand']]],
@@ -66,7 +66,7 @@ def LTRe_fDNA(output, path, output_blast, minlenTE, maxlenTE):
             df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['End'] - y, row['End'], 'R7', 0, row['Strand']]],
                                                               columns=["Chr", "Start", "End", "Region", "Score", "Strand"])])
             
-            df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['End'], row['End'] + c, 'R8', 0, row['Strand']]],
+            df_regions = pd.concat([df_regions, pd.DataFrame([[row['Chr'], row['End'], row['End'] + x, 'R8', 0, row['Strand']]],
                                                               columns=["Chr", "Start", "End", "Region", "Score", "Strand"])])
 
 

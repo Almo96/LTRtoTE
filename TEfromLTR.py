@@ -42,8 +42,8 @@ def TE_position(output, output_blast, minlenTE, maxlenTE, path):
     summary_df["Strand"] = summary_df["Strand"].replace("minus", "-")
 
     summary_df['Length'] = summary_df['End'] - summary_df['Start']
-    summary_df = summary_df.replace('LTR','', regex=True)
-    summary_df = summary_df.replace('_','', regex=True)
+    #summary_df = summary_df.replace('LTR','', regex=True)
+    #summary_df = summary_df.replace('_','', regex=True)
     summary_df = summary_df.sort_values(by=['Length'], ascending=[False])
     summary_df.to_csv(output_summary, sep='\t', header=False, index=False)
     print(f"Number of TEs: ", len(summary_df))

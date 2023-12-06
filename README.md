@@ -37,7 +37,7 @@ the parameters provided.
 How to run the code:
 
 ``` bash
-python LTRtoTE.py path/to/LTR_T.fasta path/to/genome path/to/output output_name minlenTE maxlenTE
+python LTRtoTE.py path/to/LTR_T.fasta path/to/genome path/to/output/folder output_name minlenTE maxlenTE
 ```
 
 - **output_path** the path where all the output files will be saved
@@ -54,6 +54,17 @@ Example:
 ``` bash
 python LTRtoTE.py ../genomes/LTR_T.fasta ../genomes/genome ../genomes/output Dmel732 4500 6000 --tsd 50
 ```
+
+
+Multiple files:
+
+It is also possible to run LTRtoTE on multiple files. The input files have to be in the same folder, this option does not require
+the **output_name** parameter. The code will use the file names for the output.
+
+``` bash
+python automatorLTRtoTE.py path/to/LTR_T.fasta path/to/genomes/folder path/to/output/folder minlenTE maxlenTE
+```
+
 
 **Requirements:**
 

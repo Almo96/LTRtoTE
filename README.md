@@ -80,17 +80,6 @@ python automatorLTRtoTE.py path/to/LTR_T.fasta path/to/genomes/folder path/to/ou
 - blast
 - bedtools
 
-**Notes:**
-
-- I suggest you to put the two input files in a folder, all the output
-  will be generated in the same folder
-- I suggest you to call the LTR file LTR_TEname, where TEname is the
-  name of your TE, this is not required, but the code will automatically
-  remove LTR\_ and keep the TE name for some files.
-- There are some other .bed and .fasta files generated during the
-  process that contain information about the flanking regions, if you
-  want them just delete the TSD.remove_temp() function from TSDtoTE.py.
-
 
 **Regions:**
 In the code and the output_regions.txt there are 8 regions. for a region

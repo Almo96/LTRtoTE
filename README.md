@@ -88,11 +88,11 @@ we refer to the following:
 - R1: Genomic sequence flanking the LTR
 - R2: Start sequence of the first LTR
 - R3: End sequence of the first LTR
-- R4: Coding region of the next to the first LTR
-- R5: Coding region of the next to the second LTR
+- R4: Coding region after the first LTR
+- R5: Coding region before the second LTR
 - R6: Start sequence of the second LTR
 - R7: End sequence of the second LTR
-- R8: Genomic sequence of the second LTR
+- R8: Genomic sequence flanking the LTR
 
 
 

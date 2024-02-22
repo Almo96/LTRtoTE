@@ -80,7 +80,6 @@ python automatorLTRtoTE.py path/to/LTR_T.fasta path/to/genomes/folder path/to/ou
 - blast
 - bedtools
 
-
 **Regions:**
 In the code and the output_regions.txt there are 8 regions. for a region
 we refer to the following:
